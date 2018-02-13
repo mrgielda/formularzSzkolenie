@@ -9,7 +9,7 @@
 
 <body>
     <form action="https://formspree.io/mrgielda@gmail.com" method="POST" id="main-form">
-        <section class="formularz">
+        <div class="formularz">
             
             <label for="name">Imię:</label><br>
             <input type="text" name="name" id="name" placeholder="Wpisz imię"><br>
@@ -30,9 +30,11 @@
                <option value="gdansk">Gdańsk</option>
             </select><br>
 
-            <label for="gender">Płeć:</label>
-            <input type="radio" name="gender" id="genderM" value="male">Mężczyzna
-            <input type="radio" name="gender" id="genderF" value="female">Kobieta<br>
+            
+            <label>Płeć:</label>
+                <input type="radio" name="gender" value="male"> Mężczyzna
+                <input type="radio" name="gender" value="female"> Kobieta<br>
+          
 
             <input type="checkbox" name="check" id="check">
             <label for="check">Zgoda na udostępnienie danych osobowych!</label><br>
@@ -41,7 +43,7 @@
             <textarea name="msg" id="msg" cols="30" rows="10" maxlength="140" placeholder="Wpisz wiadomość..."></textarea><br>
             
             <input type="submit" value="Wyślij">
-        </section>
+        </div>
     </form>
 
 
