@@ -8,41 +8,41 @@
 </head>
 
 <body>
+    <form action="https://formspree.io/mrgielda@gmail.com" method="POST" id="main-form">
+        <section class="formularz">
+            
+            <label for="name">Imię:</label><br>
+            <input type="text" name="name" id="name" placeholder="Wpisz imię"><br>
 
-    <header class="main-header">
-        <h1>Zapisy na szkolenie</h1>
-    </header>
+            <label for="surname">Nazwisko:</label><br>
+            <input type="text" name="surname" id="surname" placeholder="Wpisz nazwisko"><br>
 
-    <section class="applicationForm">
-        <label for="name">Imię:</label><br>
-        <input type="text" name="name" id="name" placeholder="Wpisz imię"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email" placeholder="Wpisz email"><br>
 
-        <label for="surname">Nazwisko:</label><br>
-        <input type="text" name="surname" id="surname" placeholder="Wpisz nazwisko"><br>
+            <label for="phone">Telefon:</label><br>
+            <input type="text" name="phone" id="phone" placeholder="Wpisz numer telefonu"><br>
 
-        <label for="email">Email:</label><br>
-        <input type="text" name="email" id="email" placeholder="Wpisz email"><br>
+            <label for="city">Miasto:</label><br>
+            <select name="city" id="city">
+               <option value="krakow">Kraków</option>
+               <option value="warszawa">Warszawa</option>
+               <option value="gdansk">Gdańsk</option>
+            </select><br>
 
-        <label for="phone">Telefon:</label><br>
-        <input type="text" name="phone" id="phone" placeholder="Wpisz numer telefonu"><br>
+            <label for="gender">Płeć:</label>
+            <input type="radio" name="gender" id="genderM" value="male">Mężczyzna
+            <input type="radio" name="gender" id="genderF" value="female">Kobieta<br>
 
-        <label for="city">Miasto:</label><br>
-        <select name="city" id="city" placeholder="Wybierz miasto">
-           <option value="krakow">Kraków</option>
-           <option value="warszawa">Warszawa</option>
-           <option value="gdansk">Gdańsk</option>
-        </select><br>
+            <input type="checkbox" name="check" id="check">
+            <label for="check">Zgoda na udostępnienie danych osobowych!</label><br>
 
-        <label for="gender">Płeć:</label>
-        <input type="radio" name="gender" id="gender" value="male">Mężczyzna
-        <input type="radio" name="gender" id="gender" value="female">Kobieta<br>
-
-        <input type="checkbox" name="check" id="check">
-        <label for="check">Zgoda na udostępnienie danych osobowych!</label><br>
-
-        <label for="msg">Wpisz wiadomość:</label><br>
-        <textarea name="msg" id="msg" cols="30" rows="10" maxlength="140" placeholder="Wpisz wiadomość..."></textarea><br>
-    </section>
+            <label for="msg">Wpisz wiadomość:</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10" maxlength="140" placeholder="Wpisz wiadomość..."></textarea><br>
+            
+            <input type="submit" value="Wyślij">
+        </section>
+    </form>
 
 
 </body>
